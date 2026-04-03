@@ -258,3 +258,89 @@
 #         print('Welcome on the board')
 
 # print('All users were checked!')
+
+# LESSON 4 ------------------------------------------------ СПИСКИ/КОРТЕЖІ/СЛОВНИКИ
+
+# a = [1, 2, 3, 4, 5]
+# b = ['apple', 'banana', 'chery']
+
+# print(a[0], a[1], a[-1])
+# print(b[1])
+
+# print(a[1:4], a[::2])
+# print(b[::2]) # показує весь список через 1 елемент [1, x, 3 , x, 5 ....]
+
+# print(a[::-1]) # розвертає список 
+# print(b[::-1])
+
+# a = [1, 2, 3, 4, 5]
+# b = ['apple', 'banana', 'chery']
+
+# a.append(6)
+# b.append('tomato')
+# # print(a, b)
+
+# a.insert(3, 7.4) # вставляє на певний індекс, певний елемент 
+# b.insert(3, 'bottle')
+# print(a, b)
+# a.remove(7.4)
+# b.remove('bottle')
+# print(a, b)
+
+# last_elem_1 = a.pop() # повертає видалений елемент, можно присвоїти як змінну 
+# last_elem_2 = b.pop(0)
+# print(last_elem_1, last_elem_2)
+
+# print(a.index(3), b.index('banana'))
+
+# a.extend([5, 5, 5])
+# b.extend(['chery', 'banana', 'banana'])
+# print(a.count(5), b.count('banana'))
+
+# print(a, b)
+# a.sort(reverse=True) # сортує та перевертає список 
+# b.sort()
+# print(a, b)
+# a.reverse()
+# b.reverse()
+
+#-----------------------------
+
+# a = (1, 2, 3, 4, 5, 5, 4)
+# print(a[0], a[1], a[2])
+# print(a[0:3])
+# print(a[:2], a[-2:])
+
+# print(a.count(4), a.count(4))
+# print(a.index(4))
+
+#-----------------------------
+
+# test_dict = {'user': 'Oleg', 'age': 21, 'country': 'Poland'}
+# print(test_dict['user'], test_dict['age'], test_dict.get('country'))
+# print(test_dict.get('animal', None))
+
+# test_dict['user'] = 'Andrey'
+# test_dict['country'] = 'Ukraine'
+# test_dict['male'] = 'Man'
+
+# print(test_dict)
+
+# male = test_dict.pop('male')
+# print(test_dict, male)
+
+# test_dict = {'user': 'Oleg', 'age': 21, 'country': 'Poland'}
+# copy_test = test_dict.copy()
+# test_dict.clear()
+# print(copy_test)
+
+# for key, value in copy_test.items(): #по дефолту розпаковує тільки ключі 
+#     print(f'Key: {key}, Value: {value}')
+
+
+# wrong_key = copy_test.pop('currency', 'key not found')
+# print(wrong_key)
+
+# dict_update = {'new_role': 'admin', 'salary': 10000}
+# copy_test.update(dict_update)
+# print(copy_test)
